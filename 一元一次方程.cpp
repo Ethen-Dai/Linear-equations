@@ -44,14 +44,14 @@ int main()
     {
         if ((s[i] == '+' || s[i] == '-') || (s[i] == '*' || s[i] == '/'))
         {
-            jx++;
-			fuHao.push_back(s[jx]);
+            fuHao.push_back(s[i]);
         }
-        if ((s[i] >= '0' && s[i] <= '9') && (s[i-1] == '+' || s[i-1] == '-'))
-        {
-            numberjx = i;
-		}
-
     }
+    cout << endl << "Debug:fuHao=";
+    for(int i=0;i<fuHao.size();i++)
+    {
+        cout << fuHao[i] << " ";
+    }
+    cout << endl;
 	return 0;
 }
